@@ -1,0 +1,10 @@
+# Created by .ignore support plugin (hsz.mobi)
+#truffle
+build
+
+# IntelliJ project files
+.idea
+.gitkeep
+*.iml
+out
+gen
