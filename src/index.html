@@ -26,6 +26,8 @@
         </div>
       </div>
 
+      <div id="events"></div>
+
       <div class="row" id="list">
         <!-- 매물 리스트 -->
       </div>
@@ -49,7 +51,7 @@
                     data-toggle="modal"
                     data-target="#buyModal">매입
             </button>
-            <button class="btn btn-info btn-buy"
+            <button class="btn btn-info btn-buyerInfo"
                     type="button"
                     data-toggle="modal"
                     data-target="#buyerInfoModal"
@@ -73,6 +75,26 @@
             <input type="number" class="from-control" id="age" placeholder="나이">
             <input type="hidden" id="id">
             <input type="hidden" id="price">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">닫기</button>
+            <button type="button" class="btn btn-primary" onclick="App.buyRealEstate(); return false;">제출</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <div class="modal fade" tabindex="-1" role="dialog" id="buyerInfoModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">매입자 정보</h4>
+          </div>
+          <div class="modal-body">
+            <strong>Address</strong>: <span id="buyerAddress"></span><br/>
+            <strong>Name</strong>: <span id="buyerName"></span><br/>
+            <strong>Age</strong>: <span id="buyerAge"></span><br/>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">닫기</button>

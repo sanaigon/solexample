@@ -39,5 +39,7 @@ truffle test --network ganache
 ## 실행방법
 
 1. ganache를 실행한다. (ganache의 port가 truffle-config의 port와 일치한다 가정함)
-2. `truffle migrate --network ganache` 를 이용해 배포한다.
-3. `truffle console` 를 이용해 직접 테스트 해보거나 `truffle test`를 이용해 기존에 짜여진 테스트를 돌려본다. 
+2. `truffle migrate --network ganache` 를 이용해 contract를 배포한다.
+3. index.html 경로에서 `npm run dev`를 실행해 사이트를 localhost에 띄운다.
+4. metamask에 사이트를 연결하고 계정정보가 ganache와 일치하는지 확인한다. 
+5. 부동산 구입 테스트를 진행한다. 
